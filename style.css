@@ -11,11 +11,6 @@
 
 /* general styles */
 
-section{
-    margin-bottom: 10rem;
-
-}
-
 body{
     font-size: 18px;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -42,7 +37,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem;
+    padding:  5rem 0;
     height: 100%;
     width: 100%;
 
@@ -96,16 +91,16 @@ p{
 
 }
 
-/* access section */
-.access .container{
+/* resume section */
+.resume .container{
     padding: 0;
 }
 
-.access .info{
+.resume .info{
     width: 650px;
     display: inline-block;
 }
-.access .container h2{
+.resume .container h2{
     text-align: center;
 }
 
@@ -120,7 +115,7 @@ p{
 .tools .elements{
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100%;
 
 }
 
@@ -130,10 +125,16 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 35px;
+}
+
+
+.tools .element p{
+    line-height: 1.7;
 }
 
 .tools .element > *{
-    margin: 10px;
+    margin: 5px 0;
     width: 55%;
     transition: transform 0.5s;
     flex: 1 0 auto;
@@ -176,9 +177,80 @@ p{
     margin: 0 5px;
 }
 
+
+
+/* tools-2 section */
+
+.tools-2 .elements{
+    display: flex;
+    height: 100%;
+}
+
+.tools-2 .element{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tools-2 .element img{
+    width: 50px;
+}
+
+.tools-2 .element p{
+    line-height: 1.7;
+}
+
+.tools-2 .element > *{
+    margin: 5px 0;
+    width: 55%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    align-items: center;
+    text-align: center;
+
+}
+
 /* footer */
 
 footer{
 background-color: var(--grayish-blue);
+display: flex;
+align-items: center;
+justify-content: space-between;
 
+}
+
+footer > *{
+    margin: 5px 0;
+    flex: 1;
+    align-items: center;
+    text-align: center; 
+}
+
+footer .logo img{
+    width: 50px;
+}
+
+footer .sections {
+    flex: 1;
+    display: flex;
+}
+
+footer .sections ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+
+footer .sections ul li{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+.socialmedia-icons img{
+ margin: 0 auto;
 }
