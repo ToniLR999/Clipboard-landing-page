@@ -43,6 +43,11 @@ p{
 
 }
 
+.info{
+    width: 650px;
+    display: inline-block;
+}
+
 /* main section */
 
 .main{
@@ -53,11 +58,6 @@ p{
     width: 100px;
 }
 
-
-.main .container .info{
-    width: 650px;
-    display: inline-block;
-}
 .main .container h1{
     font-size: 2.5rem;
     margin-top: 50px;
@@ -83,22 +83,17 @@ p{
 
 .btn-primary{
     background-color: var(--strong-cyan);
-    
+    /* box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.11); */
 }
 
 .btn-secondary{
     background-color: var(--light-blue);
-
+    /* box-shadow: 0px 4px 1px 1px hsl(233, 100%, 69%, 0.1); */
 }
 
 /* resume section */
 .resume .container{
     padding: 0;
-}
-
-.resume .info{
-    width: 650px;
-    display: inline-block;
 }
 .resume .container h2{
     text-align: center;
@@ -115,8 +110,7 @@ p{
 .tools .elements{
     display: flex;
     flex-direction: column;
-    height: 100%;
-
+    height: 100%;   
 }
 
 .tools .element{
@@ -148,21 +142,33 @@ p{
     text-align: start;
 }
 
-/* download section */
-
-.download .container{
-    padding: 0;
+.tools .image img{
+    width: 900px;
 }
 
-.download .info{
-    width: 650px;
-    display: inline-block;
+/* resume-2 section */
+
+.resume-2 .image{
+    margin-top: 100px;
+}
+
+
+/* download section */
+.download{
+    padding-bottom: 10rem;
+}
+.download .container{
+    padding: 0;
 }
 .download .container h2{
     text-align: center;
 }
 
 /* clients section */
+
+.clients{
+    padding: 10rem 0px;
+}
 
 .clients .images{
 
@@ -184,6 +190,9 @@ p{
 .tools-2 .elements{
     display: flex;
     height: 100%;
+    margin-top: 100px;
+    width: 75%;
+    align-items: center;
 }
 
 .tools-2 .element{
@@ -204,7 +213,7 @@ p{
 
 .tools-2 .element > *{
     margin: 5px 0;
-    width: 55%;
+    width: 100%;
     transition: transform 0.5s;
     flex: 1 0 auto;
     align-items: center;
@@ -250,7 +259,11 @@ footer .sections ul li{
     padding: 1.5rem;
     text-decoration: none;
 }
+footer .sections ul li a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
 
 .socialmedia-icons img{
- margin: 0 auto;
+    margin: 0 10px;
 }
