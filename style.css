@@ -1,269 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 
-:root{
-    --strong-cyan: hsl(171, 66%, 44%);
-    --light-blue: hsl(233, 100%, 69%);
-    --dark-grayish-blue: hsl(210, 10%, 33%);
-    --grayish-blue: hsl(201, 11%, 66%);
-    --font-regular: 400;
-    --font-semibold: 600;
+* {
+	box-sizing: border-box;
 }
 
-/* general styles */
-
-body{
-    font-size: 18px;
-    font-family: 'Bai Jamjuree', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-weight: var(--font-regular);
-
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
 }
 
-
-p{
-    color: var(--grayish-blue);
-    font-size: 1.1rem;
-    text-align: center;
-
+body {
+	color: var(--dark-grayish-blue);
+	font-family: 'Bai Jamjuree', sans-serif;
+	margin: 0;
+	text-align: center;
 }
 
-.title{
-    color: var(--dark-grayish-blue);
-    text-align: center;
+header {
+	background-image: url('./images/bg-header-desktop.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0 20px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:  5rem 0;
-    height: 100%;
-    width: 100%;
-
+img {
+	max-width: 100%;
 }
 
-.info{
-    width: 650px;
-    display: inline-block;
+p {
+	color: var(--grayish-blue);
+	line-height: 1.5;
 }
 
-/* main section */
-
-.main{
-    background-image: url('./images/bg-header-desktop.png');
-    background-size: cover;
-}
-.main .logo{
-    width: 100px;
+.container {
+	padding: 0 20px;
+	margin: 30px auto;
+	max-width: 100%;
+	width: 1200px;
 }
 
-.main .container h1{
-    font-size: 2.5rem;
-    margin-top: 50px;
+.container-small {
+	width: 700px;
 }
 
-.buttons{
-    margin-top: 35px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+section {
+	padding: 30px 0;
 }
 
-.btn{
-    color: white;
-    margin: 0 10px;
-    border-radius: 30px;
-    width: fit-content;
-    padding: 1rem 2rem;
-    border: none;
-    font-size: 1rem;
-    font-weight: var(--font-regular);
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.btn-primary{
-    background-color: var(--strong-cyan);
-    /* box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.11); */
+.flex > * {
+	flex: 1;
+	padding: 10px;
 }
 
-.btn-secondary{
-    background-color: var(--light-blue);
-    /* box-shadow: 0px 4px 1px 1px hsl(233, 100%, 69%, 0.1); */
+.m4 {
+	margin: 100px auto;
 }
 
-/* resume section */
-.resume .container{
-    padding: 0;
-}
-.resume .container h2{
-    text-align: center;
-}
-
-/* tools section */
-
-.tools .container{
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+.btn {
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 35px;
+	margin: 15px 5px;
+    cursor: pointer;
 }
 
-.tools .elements{
-    display: flex;
-    flex-direction: column;
-    height: 100%;   
+.btn-primary {
+	background-color: var(--strong-cyan);
+	box-shadow: 0 4px hsl(171, 68%, 36%);
 }
 
-.tools .element{
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 35px;
+.btn-secondary {
+	background-color: var(--light-blue);
+	box-shadow: 0 4px hsl(233, 71%, 61%);
 }
 
-
-.tools .element p{
-    line-height: 1.7;
+footer {
+	background-color: hsl(0, 0%, 93%);
 }
 
-.tools .element > *{
-    margin: 5px 0;
-    width: 55%;
-    transition: transform 0.5s;
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
+footer img {
+	width: 60px;
 }
 
-.tools .title,.tools p{
-    text-align: start;
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	list-style-type: none;
 }
 
-.tools .image img{
-    width: 900px;
+footer .container {
+	margin-bottom: 0;
 }
 
-/* resume-2 section */
-
-.resume-2 .image{
-    margin-top: 100px;
+footer ul a {
+	color: var(--dark-grayish-blue);
+	text-decoration: none;
 }
 
-
-/* download section */
-.download{
-    padding-bottom: 10rem;
-}
-.download .container{
-    padding: 0;
-}
-.download .container h2{
-    text-align: center;
+footer .links {
+	flex: 3;
 }
 
-/* clients section */
-
-.clients{
-    padding: 10rem 0px;
+footer .links li {
+	padding: 10px;
+	margin-right: 40px;
 }
 
-.clients .images{
-
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 auto;
-    justify-content: space-evenly;
-    align-items: center;
+footer .links a:hover{
+    color: var(--strong-cyan);
 }
 
-.clients img{
-    margin: 0 5px;
+footer .social li {
+	margin: 0 5px;
 }
 
-
-
-/* tools-2 section */
-
-.tools-2 .elements{
-    display: flex;
-    height: 100%;
-    margin-top: 100px;
-    width: 75%;
-    align-items: center;
+footer .social a {
+	font-size: 24px;
+	margin-right: 5px;
 }
 
-.tools-2 .element{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+footer .social a:hover{
+    color: var(--strong-cyan);
 }
+@media (max-width: 768px) {
+	.flex {
+		flex-direction: column;
+	}
 
-.tools-2 .element img{
-    width: 50px;
-}
+	footer .links {
+		flex-direction: column;
+	}
 
-.tools-2 .element p{
-    line-height: 1.7;
-}
-
-.tools-2 .element > *{
-    margin: 5px 0;
-    width: 100%;
-    transition: transform 0.5s;
-    flex: 1 0 auto;
-    align-items: center;
-    text-align: center;
-
-}
-
-/* footer */
-
-footer{
-background-color: var(--grayish-blue);
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-}
-
-footer > *{
-    margin: 5px 0;
-    flex: 1;
-    align-items: center;
-    text-align: center; 
-}
-
-footer .logo img{
-    width: 50px;
-}
-
-footer .sections {
-    flex: 1;
-    display: flex;
-}
-
-footer .sections ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-
-footer .sections ul li{
-    font-size: 1.2rem;
-    padding: 1.5rem;
-    text-decoration: none;
-}
-footer .sections ul li a{
-    text-decoration: none;
-    color: var(--dark-grayish-blue);
-}
-
-.socialmedia-icons img{
-    margin: 0 10px;
+	footer .links li {
+		padding: 10px;
+		margin-right: 0;
+	}
 }
